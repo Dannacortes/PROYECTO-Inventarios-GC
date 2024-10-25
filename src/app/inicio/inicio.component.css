@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  box-sizing: border-box;
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product {
+      width: calc(50% - 20px); /* Dos productos en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+      width: 100%; /* Un producto en pantallas muy pequeñas */
+  }
+}
